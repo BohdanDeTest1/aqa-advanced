@@ -1,4 +1,4 @@
-let score = 101;
+let score = 62;
 let e = "оцінка"
 let scoreEstimation
 switch (true){
@@ -24,5 +24,5 @@ switch (true){
         break;
     default:
         scoreEstimation = "невірна кількість балів"
-        console.log(`${scoreEstimation} - недопустима кількість балів \r\nкількість балів перевищена на ${score - 100} балів`)
+        console.log(`${scoreEstimation}\r\nкількість балів перевищена на ${score - 100} балів`)
 }
