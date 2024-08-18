@@ -23,8 +23,8 @@ log(chalk.green(
 
 // ES2015 template literal
 log(`
-CPU: ${chalk.red('90%')}
-RAM: ${chalk.green('40%')}
+CPU: ${chalk.yellow('90%')}
+RAM: ${chalk.yellow('40%')}
 DISK: ${chalk.yellow('70%')}
 `);
 
