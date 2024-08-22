@@ -1,0 +1,2 @@
+myCloser();
+// console.log(myCloser);
