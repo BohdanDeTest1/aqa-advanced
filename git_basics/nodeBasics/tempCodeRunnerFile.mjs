@@ -15,11 +15,9 @@ log(chalk.blue('Hello', 'World!', 'Foo', 'bar', 'biz', 'baz'));
 log(chalk.red('Hello', chalk.underline.bgBlue('world') + '!'));
 
 // Nest styles of the same type even (color, underline, background)
-log(chalk.green(
-	'I am a green line ' +
-	chalk.blue.underline.bold('with a blue substring') +
-	' that becomes green again!'
-));
+log(
+	chalk.green('I am a green line ' + chalk.blue.underline.bold('with a blue substring') + ' that becomes green again!'),
+);
 
 // ES2015 template literal
 log(`

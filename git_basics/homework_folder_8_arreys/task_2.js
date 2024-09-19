@@ -6,7 +6,7 @@
 Виведіть новий масив на консоль.*/
 
 const numbers = [1, 2, 3, 4, 5];
-const mutant = numbers.map((number, index) =>{
-return number * index
+const mutant = numbers.map((number, index) => {
+	return number * index;
 });
 console.log(mutant);
