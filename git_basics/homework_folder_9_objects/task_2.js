@@ -6,12 +6,12 @@ year: число, представляє рік видання книги.
 Виведіть деструктуризовані змінні в консоль */
 
 const book = {
-    title: "Великий Гетсбі",
-    author: "Френсіс Скотт Фіцджеральд",
-    year: 1925
+	title: 'Великий Гетсбі',
+	author: 'Френсіс Скотт Фіцджеральд',
+	year: 1925,
 };
 
 const { title, author } = book;
 
-console.log("Title:", title);
-console.log("Author:", author);
+console.log('Title:', title);
+console.log('Author:', author);

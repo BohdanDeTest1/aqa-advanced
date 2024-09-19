@@ -1,2 +1,1 @@
-
-console.log("Now I can use git ")
+console.log('Now I can use git ');

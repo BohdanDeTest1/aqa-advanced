@@ -3,12 +3,12 @@
 Зробіть деструктуризацію в циклі */
 
 const users = [
-    { name: "Джон", email: "john@example.com", age: 28 },
-    { name: "Емілі", email: "emily@example.com", age: 35 },
-    { name: "Майкл", email: "michael@example.com", age: 22 }
+	{ name: 'Джон', email: 'john@example.com', age: 28 },
+	{ name: 'Емілі', email: 'emily@example.com', age: 35 },
+	{ name: 'Майкл', email: 'michael@example.com', age: 22 },
 ];
 
 for (const user of users) {
-    const { name, email, age } = user;
-    console.log(`Name: ${name}, Email: ${email}, Age: ${age}`);
+	const { name, email, age } = user;
+	console.log(`Name: ${name}, Email: ${email}, Age: ${age}`);
 }

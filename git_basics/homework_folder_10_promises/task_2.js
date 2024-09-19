@@ -11,47 +11,46 @@
  */
 
 function fetchTodo() {
-    return fetch('https://jsonplaceholder.typicode.com/todos/1')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => data)
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-        });
+	return fetch('https://jsonplaceholder.typicode.com/todos/1')
+		.then((response) => {
+			if (!response.ok) {
+				throw new Error('Network response was not ok');
+			}
+			return response.json();
+		})
+		.then((data) => data)
+		.catch((error) => {
+			console.error('There was a problem with the fetch operation:', error);
+		});
 }
 
 function fetchUser() {
-    return fetch('https://jsonplaceholder.typicode.com/users/1')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => data)
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-        });
+	return fetch('https://jsonplaceholder.typicode.com/users/1')
+		.then((response) => {
+			if (!response.ok) {
+				throw new Error('Network response was not ok');
+			}
+			return response.json();
+		})
+		.then((data) => data)
+		.catch((error) => {
+			console.error('There was a problem with the fetch operation:', error);
+		});
 }
 
 Promise.all([fetchTodo(), fetchUser()])
-    .then(([todo, user]) => {
-        console.log('Todo:', todo);
-        console.log('User:', user);
-    })
-    .catch(error => {
-        console.error('There was a problem with one or more fetch operations:', error);
-    });
-
+	.then(([todo, user]) => {
+		console.log('Todo:', todo);
+		console.log('User:', user);
+	})
+	.catch((error) => {
+		console.error('There was a problem with one or more fetch operations:', error);
+	});
 
 Promise.race([fetchTodo(), fetchUser()])
-    .then(result => {
-        console.log('First response received:', result);
-    })
-    .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-    });
+	.then((result) => {
+		console.log('First response received:', result);
+	})
+	.catch((error) => {
+		console.error('There was a problem with the fetch operation:', error);
+	});

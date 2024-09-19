@@ -5,8 +5,8 @@
  * @returns {number[]} Новий масив, що містить лише числа більші за minValue.
  */
 function filterGreaterThanValue(minValue, numbersList) {
-    // Використовуємо метод filter для відфільтрування масиву
-    return numbersList.filter(number => number > minValue);
+	// Використовуємо метод filter для відфільтрування масиву
+	return numbersList.filter((number) => number > minValue);
 }
 
 // Приклад використання

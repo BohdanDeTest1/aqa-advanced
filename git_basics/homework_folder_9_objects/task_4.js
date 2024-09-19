@@ -7,12 +7,12 @@ age: число, представляє вік особи.
 Виведіть оновлений об'єкт person в консоль. */
 
 const person = {
-    firstName: "Igor",
-    lastName: "Rex",
-    age: 30
+	firstName: 'Igor',
+	lastName: 'Rex',
+	age: 30,
 };
 
-person.email = "igor.rex@gmail.com";
+person.email = 'igor.rex@gmail.com';
 
 delete person.age;
 

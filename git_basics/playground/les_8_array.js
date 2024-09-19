@@ -1,48 +1,48 @@
 let array = ['Apple', 'Banana', 'Cherry'];
 
 array.pop();
-console.log(array)
-array.push('Orange')
-console.log(array)
+console.log(array);
+array.push('Orange');
+console.log(array);
 array.shift();
-console.log(array)
+console.log(array);
 array.unshift('Apple');
-console.log(array)
+console.log(array);
 // push
 // pop
-// shift 
+// shift
 // unshift
 // forEach
-// map 
+// map
 
 let matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
+	[1, 2, 3],
+	[4, 5, 6],
+	[7, 8, 9],
 ];
- 
+
 let cube = [
-    [
-        [1, 2, 3],
+	[
+		[1, 2, 3],
 
-        [4, 5, 6],
+		[4, 5, 6],
 
-        [7, 8, 9]
-    ],
-    [
-        [11, 12, 13],
+		[7, 8, 9],
+	],
+	[
+		[11, 12, 13],
 
-        [14, 15, 61],
+		[14, 15, 61],
 
-        [17, 18, 19]
-    ],
-    [
-        [21, 22, 23],
+		[17, 18, 19],
+	],
+	[
+		[21, 22, 23],
 
-        [24, 25, 26],
+		[24, 25, 26],
 
-        [27, 28, 29]
-    ],
+		[27, 28, 29],
+	],
 ];
-const result = cube[0][1][2]
-console.log(result)
+const result = cube[0][1][2];
+console.log(result);

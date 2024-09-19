@@ -7,6 +7,6 @@
 
 const numbers = [10, 20, 30, 40, 50];
 let sum = numbers.reduce((accum, currValue) => {
-return accum + currValue;
+	return accum + currValue;
 });
 console.log(sum);

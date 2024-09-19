@@ -10,20 +10,20 @@
 //  * @param {integer} init
 //  * @return { increment: Function, decrement: Function, reset: Function }
 //  */
-var createCounter = function(init) {
-    let currentValue = init;
-    return {
-        increment(){
-            currentValue +=1;
-            return currentValue;
-        },
-        decrement(){
-            currentValue-=1;
-            return currentValue;
-        },
-        reset(){
-            currentValue = init;
-            return currentValue;
-        },
-    }
-}
+var createCounter = function (init) {
+	let currentValue = init;
+	return {
+		increment() {
+			currentValue += 1;
+			return currentValue;
+		},
+		decrement() {
+			currentValue -= 1;
+			return currentValue;
+		},
+		reset() {
+			currentValue = init;
+			return currentValue;
+		},
+	};
+};
