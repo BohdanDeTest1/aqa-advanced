@@ -1,16 +1,16 @@
 // Створюємо ітератор для масиву чисел
 function createNumberIterator(numbers) {
-    let index = 0;
+	let index = 0;
 
-    return {
-        next: function() {
-            if (index < numbers.length) {
-                return { value: numbers[index++], done: false };
-            } else {
-                return { value: undefined, done: true };
-            }
-        }
-    };
+	return {
+		next: function () {
+			if (index < numbers.length) {
+				return { value: numbers[index++], done: false };
+			} else {
+				return { value: undefined, done: true };
+			}
+		},
+	};
 }
 
 // Використання ітератора

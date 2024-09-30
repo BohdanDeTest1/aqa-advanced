@@ -1,5 +1,3 @@
-function doNothing () {
-
-}
+function doNothing() {}
 let result = doNothing;
-console.log(result)
+console.log(result);
