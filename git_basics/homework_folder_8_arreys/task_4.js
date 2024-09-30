@@ -6,5 +6,5 @@ Cтворіть новий масив, який міститиме лише па
 Виведіть отриманий масив парних чисел на консоль. */
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const pairedNumber = numbers.filter(number => number % 2 === 0);
+const pairedNumber = numbers.filter((number) => number % 2 === 0);
 console.log(pairedNumber);

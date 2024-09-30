@@ -1,11 +1,10 @@
-function outerF (){
-    let outer = "я зовні"
+function outerF() {
+	let outer = 'я зовні';
 
-    function innerF (){
-        console.log(outer)
-        
-    }
-    return innerF;
+	function innerF() {
+		console.log(outer);
+	}
+	return innerF;
 }
 
 const myCloser = outerF();
